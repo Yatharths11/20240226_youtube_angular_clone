@@ -1,0 +1,84 @@
+.popup_container{
+    width:max-content;
+    height: max-content;
+    background-color: #3F3F3F;
+    padding: 8px;
+    position: relative;
+    display: inline-block;
+}
+.person,.person_details{
+    background-color: #3F3F3F;
+}
+h5,h4,h6{
+    display: inline;
+    background-color: #3F3F3F;
+}
+.details{
+    background-color: #3F3F3F;
+}
+.account_icon i{
+    
+    height: 10px;
+    width: 10px;
+    margin: 10px;
+
+}
+.account_icon{
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    display: inline;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.icon{
+    font-size: 20px;
+    margin: 10px;
+    background-color: #3F3F3F;
+}
+.account_actions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:#3F3F3F ;
+}
+span{
+    background-color: #3F3F3F;
+}
+.account_actions span{
+    padding-right:10px;
+    margin: 5px;
+    color: white;
+}
+.account_actions span i{
+    background-color: #3F3F3F;
+}
+.account_actions h5{
+    color: white;
+}
+.settings_tab{
+    background-color: #3F3F3F;
+}
+.settings_tab span{
+    padding-right: 10px;
+    margin: 5px;
+    color: white;
+    background-color: #3F3F3F;
+}
+.settings_tab span i{
+    background-color: #3F3F3F;
+}
+.person{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.person_details{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    color: white;
+}

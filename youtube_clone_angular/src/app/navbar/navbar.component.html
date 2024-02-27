@@ -1,0 +1,81 @@
+
+<nav>
+
+    <div class="left-header" >
+        <!-- Hamburger -->
+       <div class="hamburger">
+            <i>
+                <span class="bi bi-list menu"></span>
+            </i>
+       </div>
+       <!-- Logo -->
+       <div class="text-and-logo">
+            <img id="text-logo" src="https://cdn.pixabay.com/photo/2015/03/10/17/23/youtube-667451_1280.png" alt="logo">
+       </div>
+    </div>
+    <div class="search-bar">
+        <!-- search bar -->
+        <div class="search-area">
+            <div class="input-box">
+                <input type="text" placeholder="Search.."/>
+            </div>
+            <div id="search-button-area">
+                <i>
+                    <span class="bi bi-search search-button"></span>
+                </i>
+            </div>    
+        </div>
+        <!-- mic -->
+        <div class="mic-icon-area">
+            <i class="bi bi-mic-fill" style="height: 50px;"></i>
+        </div>
+    </div>
+    <div class="header-right-icons">  
+        <div class="right-icon">
+            <!-- create -->
+            <i class="ri-video-add-line right-icon"></i>
+        </div>
+        <div class="right-icon">
+            <!-- notifications -->
+            <i class="ri-notification-4-line right-icon"></i>
+        </div>
+        <div class="right-icon">
+            <!-- Account -->
+            <i class="ri-account-circle-line right-icon" (click)="makevisible()"></i>
+            <div class="popup_container" [style.display]="isButtonVisible ? 'block' : 'none'"> 
+                <div class="details">
+                    <div class="person">
+                        <div class="account_icon">
+                            <i class="bi bi-person"></i>
+                        </div>
+                        <div class="person_details">
+                            <h4>Yatharth Shende</h4>
+                            <h5>yatharth02#gmail.com</h5>
+                            <h6>View your channel</h6>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="account_actions" *ngFor="let popup of popup_contents">
+                        <span [class]="popup.icon"></span>
+                        <h5>{{popup.text}}</h5>
+                    </div>
+                    <hr>
+                    <div class="settings_tab">
+                        <span>
+                            <a routerLink="settings">
+                                <i style="margin-left: 75px;" class="bi bi-gear-fill"></i> <h5>Settings</h5>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+
+
+
+  
+  

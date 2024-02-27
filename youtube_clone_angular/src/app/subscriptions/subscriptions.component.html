@@ -1,0 +1,22 @@
+<!-- <p>subscriptions works!</p> -->
+<app-navbar></app-navbar>
+<!-- <app-left-sidebar></app-left-sidebar> -->
+<div class="container">
+    <app-left-sidebar/>
+    <div class="body-recommendations">
+        <div class="row">
+            <div class="thumbnail-card" *ngFor="let card of subscribes">
+                <img src="assets/thumbnail.webp" alt="Video Thumbnail">
+                <div class="card-content">
+                    <h2>{{card.title}}</h2>
+                    <p class="channel">{{card.channel}}</p>
+                    <div class="metadata">
+                        <div class="views">{{card.views}}</div>
+                        <div class="date">{{card.datePublished}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+

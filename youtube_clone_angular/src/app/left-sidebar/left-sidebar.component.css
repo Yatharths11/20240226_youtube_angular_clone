@@ -1,0 +1,47 @@
+.left-sidebar{
+    display: inline-flex;
+    flex-direction: column;
+    width: 70px;
+}
+.icon{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    color: white;
+    background-color: transparent;
+}
+.icon-area{
+    height: 44px;
+    width: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    display: inline;
+    margin: 0px;
+    color: white;
+    font-size: 10px;
+}
+.icon-and-text{
+    /* border: 2px solid red; */
+    padding-top: 16px;
+    padding-right: 14px;
+    padding-bottom: 2px;
+    display: flex;
+    margin: 2px;
+    /* justify-content: center; */
+    padding-right: 0px;
+    padding-bottom: 14px;
+    width: 64px;
+    transition: background-color 0.3s ease-in-out;
+}
+i span{
+    background-color: #0f0f0f;
+}
+.icon-and-text:hover {
+    background-color: #1F1F1F;;
+}

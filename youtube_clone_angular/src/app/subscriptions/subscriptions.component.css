@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: #0f0f0f;
+    box-sizing: border-box;
+}
+app-left-sidebar{
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.thumbnail-card {
+    flex: 0 0 calc(34% - 16px);
+    max-width: 400px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 2px;
+    background-color: #0F0F0F;
+    box-shadow: 0 4px 8px rgba(37, 37, 37, 0.945)
+}
+.thumbnail-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #ddd;
+    display: inline;
+    border-radius: 6px;
+}
+
+.card-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: #555;
+}
+
+h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.channel {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.metadata {
+    height: 20px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #777;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.views {
+    margin-right: 10px;
+    display: inline;
+}
+
+.date {
+    color: #999;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    margin: 5px;
+}
+.body-recommendations{
+    margin:10px;
+    width: calc(100vw - 70px);
+}

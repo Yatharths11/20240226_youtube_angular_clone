@@ -1,0 +1,11 @@
+
+
+
+<div class="left-sidebar">
+    <div class="icon-and-text" *ngFor="let icon of icons">
+        <div class="icon-area icon" [routerLink]="icon.text === 'Subscriptions' ? ['subscriptions'] : null">
+            <i><span [class]="icon.icon"></span></i>
+            <p class="text">{{icon.text}}</p>
+        </div>
+    </div>
+</div>
